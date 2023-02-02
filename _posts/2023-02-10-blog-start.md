@@ -8,9 +8,9 @@ tags: docker jekyll
 cover: "/assets/chicken_01.jpg"
 ---
 
-예전부터 했어야 할 일을 이제서야 하는거임. 약간의 강요가 포함되어 시작하게 됐음.
+예전부터 했어야 할 일을 이제서야 하게됐습니다. 그리고 약간의 강요가 포함되어 시작하게 됐습니다.
 
-[Medium](https://medium.com/), [브런치](https://brunch.co.kr/), velog, github 무료이면서 포맷을 자유롭게 사용할 수 있는 플랫폼을 택하면 github 인듯
+[Medium](https://medium.com/), [브런치](https://brunch.co.kr/), [velog](https://velog.io/), [github](https://github.com/) 4가지 플랫폼 중 무료이면서 포맷을 자유롭게 사용할 수 있는 플랫폼으로 github 선택하게되었습니다.
 
 ## GitHub Page
 
@@ -22,6 +22,7 @@ Ruby 개발을 할수도 있겠지만 당장은 Javascript 와 Pyhton 위주일�
 
 ### Docker
 
+dockerfile 내용
 {% highlight html %}
 FROM ruby:3.2.0-alpine3.17
 
@@ -31,12 +32,14 @@ RUN apk add --no-cache build-base gcc cmake git
 RUN gem update bundler
 {% endhighlight %}
 
+docker image 생성 및 container 생성
 {% highlight html %}
 docker build -t chaossin/jekyll .
 
 docker run --name blog --volume="$PWD:/srv/jekyll" -p 4000:4000 -it chaossin/jekyll
 {% endhighlight %}
 
+je
 {% highlight html %}
 bundle install
 
