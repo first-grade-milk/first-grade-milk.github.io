@@ -3,9 +3,10 @@ layout: post
 title: "GitHub Page"
 date: 2023-01-26T14:25:52-05:00
 author: jaeyong pae
-categories: jekyll
+categories: Jekyll
 tags: docker jekyll
 cover: "/assets/chicken_01.jpg"
+published: true
 ---
 
 예전부터 했어야 할 일을 이제서야 하게됐습니다. 그리고 약간의 강요가 포함되어 시작하게 됐습니다.
@@ -39,13 +40,14 @@ docker build -t chaossin/jekyll .
 docker run --name blog --volume="$PWD:/srv/jekyll" -p 4000:4000 -it chaossin/jekyll
 {% endhighlight %}
 
-je
+### Jekyll
+
 {% highlight html %}
 bundle install
 
-bundle exec jekyll serve --host 0.0.0.0 -p 4000
+bundle exec jekyll serve --host 0.0.0.0 -p 4000 --unpublished
 {% endhighlight %}
 
-### Jekyll
-
 ### Jekyll Theme
+
+[centrarium](https://github.com/bencentra/centrarium) 사용
