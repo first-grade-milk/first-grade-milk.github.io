@@ -118,22 +118,16 @@ layout: default
 	</section>
 {% endif %}
 
-{% if site.disqus_shortname %}
-{% unless page.disqus_disabled %}
-<section class="disqus">
-  <div class="col-lg-8 col-md-10 mx-auto">
-    <hr />    
-    <script src="https://utteranc.es/client.js"
-        repo="first-grade-milk / first-grade-milk.github.io"
-        issue-term="url"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-    </script>    
-  </div>
-</section>
-{% endunless %}
-{% endif %}
+<div class="col-lg-8 col-md-10 mx-auto">
+  <hr />
+  <script src="https://utteranc.es/client.js"
+      repo="first-grade-milk/first-grade-milk.github.io"
+      issue-term="url"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+  </script>
+</div>
 
 </div>
 </div>
