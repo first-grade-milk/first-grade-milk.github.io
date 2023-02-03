@@ -43,6 +43,9 @@ jekyll-archives:
     category: '/category/:name/'
     tag: '/tag/:name/'
 
+utterances:
+    enable: true
+
 # Disqus comments
 # disqus_shortname: bencentra
 
