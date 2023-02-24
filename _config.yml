@@ -44,7 +44,7 @@ jekyll-archives:
     tag: '/tag/:name/'
 
 utterances:
-    enable: true
+    enable: false
 
 # Disqus comments
 # disqus_shortname: bencentra
